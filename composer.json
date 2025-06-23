@@ -1,0 +1,16 @@
+{
+    "name": "eaudeweb/edw_group",
+    "description": "Provides functionality for private tabs of a meeting.",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "dtabirca",
+            "email": "dtabirca@1029792.no-reply.drupal.org"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "drupal/group": "^3.3",
+        "drupal/node_access_grants": "^3.1"
+    }
+}

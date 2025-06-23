@@ -1,19 +1,8 @@
-# edw_group
+# EDW group
 
 Enable the group module to provide functionality for private tabs for a meeting.
 
-# Installation
-
-1. Install the `edw_modules` suite using composer as instructed in the main module documentation
-2. Enable the module using drush: `drush en edw_group`.
-
-Before enabling this module, make sure that the following modules are present:
-```php
-"require": {
-  "drupal/group": "^3.2",
-  "drupal/node_access_grants": "^3.1",
-}
-```
+## Prerequisites
 
 Recommended patches for `group` module:
 
@@ -28,6 +17,21 @@ Recommended patches for `group` module:
 ```
 
 Don't forget rebuilds the node access database: `node_access_rebuild(TRUE)`.
+
+## Installation
+1. Add the following snippet to the `repositories` section of your `composer.json` file:
+```
+{
+    "type": "git",
+    "url": "https://github.com/eaudeweb/edw_group.git"
+}
+```
+
+2. Run
+   ```composer require eaudeweb/edw_group:^1.0```
+
+3. Enable the module:
+   ``drush en edw_group``
 
 ## Architecture
 
@@ -55,3 +59,16 @@ role as administrator (such as System) you need manually add new role by at:
    Go to `/admin/structure/types/manage/{entity_type}/form-display` and display
    these fields in the edit form.
 3. Two permissions.
+
+## Other EDW modules:
+* [edw_blocks](https://github.com/eaudeweb/edw_blocks)
+* [edw_decoupled](https://github.com/eaudeweb/edw_decoupled)
+* [edw_demo_data](https://github.com/eaudeweb/edw_demo_data)
+* [edw_document](https://github.com/eaudeweb/edw_document)
+* [edw_event](https://github.com/eaudeweb/edw_event)
+* [edw_media](https://github.com/eaudeweb/edw_media)
+* [edw_paragraphs](https://github.com/eaudeweb/edw_paragraphs)
+* [edw_person](https://github.com/eaudeweb/edw_person)
+* [edw_project](https://github.com/eaudeweb/edw_project)
+* [edw_themes](https://github.com/eaudeweb/edw_themes)
+* [edw_utilities](https://github.com/eaudeweb/edw_utilities)
