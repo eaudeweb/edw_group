@@ -24,6 +24,10 @@ Don't forget rebuilds the node access database: `node_access_rebuild(TRUE)`.
 {
     "type": "git",
     "url": "https://github.com/eaudeweb/edw_group.git"
+},
+{
+      "type": "vcs",
+      "url": "https://git.drupalcode.org/issue/node_access_grants-3494785"
 }
 ```
 
