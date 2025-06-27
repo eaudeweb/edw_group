@@ -31,6 +31,16 @@ Don't forget rebuilds the node access database: `node_access_rebuild(TRUE)`.
 }
 ```
 
+And add ``drupal/node_access_grants`` to the exclude section of the ``https://packages.drupal.org/8`` repository in composer.json 
+```    
+"repositories": [
+{
+"type": "composer",
+"url": "https://packages.drupal.org/8",
+"exclude": [
+"drupal/node_access_grants",
+```
+
 2. Run
    ```composer require eaudeweb/edw_group:^1.0```
 
